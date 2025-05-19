@@ -1,13 +1,59 @@
-# Gráfico-Pareto
-Muito usado para Melhoria dos processos de negócios. Ele sugere que 80% de todos os problemas refere a 20% das causas.
-Primeiro Passo é crirar uma planilha com quatro colunas onde teremos 9 itens, você pode criar com outros nomes e valores.
-Criei 9 Produtos na primeira linha 
-Para cada um desses itens foi criado um valor.
-A terceira coluna com o nome Acumulado deve ser organizada de forma que fique ordenado do maior para o menor. Isso é feito no próprio filtro da coluna C.
-O Valor acumulado sempre se refere ao valor que está a esquerda mais o valor acima, nesse caso devemos inserir na coluna C3 a seguinte fórmula: =B3+C2, que seria o valor da sprite + o acumulado anterior que seria o valor de Pepsi e assim sucessivamente.
-Agora a coluna D vamos preencher com o Percentual acumulado. Que seria o valor acumulado dividido pela soma do valor acumulado. Então a coluna D2 ficaria assim: =C2/C10, na coluna D3 seguimos com o mesmo critério que seria =C3/C10, porém ao digitar C10 precisamos travar a celular clicando em F4 para travar a célula para não ter erro nos próximos valores ao arrastar as fórmulas. Então vai ficar assim no D3: =C3/$C$10
-Com isso conseguimos identificar que os 4 primeiros itens são responsáveis por 80% do meu faturamento e posso focar mais pessoas nesses quatro produtos.
-Agora vamos representar isso através do gráfico de Pareto que seria assim:
-Selecione apenas a coluna A e B da planilha, clique em Inserir, gráficos recomendados, todos os gráficos, Histograma, clique no segundo símbolo, onde está escrito Pareto.
-Pronto! Seu grafico está pronto. 
+📈 Gráfico de Pareto no Excel
+🎯 Objetivo
+O Gráfico de Pareto é muito utilizado para melhoria de processos de negócios, ajudando a identificar as causas mais significativas de um problema. Ele é baseado no Princípio de Pareto, que sugere que 80% dos problemas estão relacionados a 20% das causas.
+
+📝 Passo a Passo para Construção
+1. 📊 Estrutura da Planilha
+Crie uma planilha com quatro colunas e insira 9 itens (exemplo: nomes de produtos):
+
+| Produto | Valor | Acumulado | % Acumulado |
+| ------- | ----- | --------- | ----------- |
+| Sprite  | 30    |           |             |
+| Pepsi   | 50    |           |             |
+| ...     | ...   | ...       | ...         |
+
+...	...	...	...
+
+Você pode usar os nomes e valores que preferir.
+
+2. 📈 Preenchimento da Coluna "Acumulado"
+Ordene os valores da coluna B (Valor) do maior para o menor.
+
+Na coluna C (Acumulado), insira a fórmula para somar o valor atual com o acumulado anterior:
+
+Exemplo:
+
+C2: mesmo valor de B2
+
+C3: =B3+C2 → soma o valor atual com o acumulado anterior
+
+Continue esse padrão nas linhas seguintes.
+
+3. 📉 Preenchimento da Coluna "% Acumulado"
+Na coluna D (% Acumulado), divida o valor acumulado pela soma total do acumulado (linha final da coluna C).
+
+Exemplo:
+
+D2: =C2/C10
+
+D3: =C3/$C$10 → use F4 para travar a célula da soma total (C10), garantindo que a fórmula funcione corretamente ao arrastar.
+
+🔍 Análise
+Com os percentuais acumulados em mãos, você poderá identificar os itens que representam aproximadamente 80% do total. No exemplo, os quatro primeiros produtos representam esse percentual e, portanto, merecem maior foco e atenção.
+
+📊 Criação do Gráfico de Pareto no Excel
+Selecione apenas as colunas A (Produto) e B (Valor).
+
+Vá em Inserir > Gráficos Recomendados.
+
+Clique na aba Todos os Gráficos.
+
+Escolha a opção Histograma.
+
+Selecione o segundo modelo, chamado Pareto.
+
+Pronto! O seu gráfico de Pareto será gerado automaticamente.
+
+✅ Conclusão
+O Gráfico de Pareto ajuda a priorizar esforços nas causas que mais impactam os resultados. Com isso, é possível tomar decisões mais estratégicas e eficazes para o seu negócio.
 
